@@ -538,7 +538,7 @@ namespace refrigerated_truck
                     CoolingSystemState = fan.ToString(),
                     ContentsState = contents.ToString(),
                     Location = new { lon = currentLon, lat = currentLat },
-                    Event = eventText,
+                    Event = eventText == noEvent ? null : eventText,
                 };
                 var telemetryMessageString = JsonSerializer.Serialize(telemetryDataPoint);
                 var telemetryMessage = new Message(Encoding.ASCII.GetBytes(telemetryMessageString));
