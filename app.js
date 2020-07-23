@@ -453,7 +453,7 @@ function sendTruckTelemetry() {
         {
             // Format is:  
             // Field name from IoT Central app ":" variable name from NodeJS app.
-            ContentsTemperature: temp.toFixed(2),
+            ContentsTemperature: Math.round(temp * 100)/100,
             TruckState: state,
             CoolingSystemState: fan,
             ContentsState: contents,
