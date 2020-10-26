@@ -243,8 +243,7 @@
                 "en": "Optimal temperature"
               },
               "name": "OptimalTemperature",
-              "schema": "double",
-              "unit": "Units/Temperature/celsius"
+              "schema": "double"
             },
             "displayName": {
               "en": "Set optimal temperature"
